@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+
+        #title {
+        color:white;
+        font-family:Aharoni;
+        font:bolder;
+        font-size:42pt;
+
+        }
+
+        .submit {
+        background-color:rgba(236, 240, 241,1.0);
+        padding:10px;
+        border: 1px solid #27ae60;
+        width:100px;
+
+        }
+
+        .next {
+        background-color:rgba(236, 240, 241,1.0);
+        padding:10px;
+        border:1px solid #f1c40f;
+        width:100px;
+        }
+       
+    </style>
+</head>
+<body style="background-image:url('Images/Soccer-Field-Night.jpg')">
+    <div>
+
+        <div class="row-fluid">
+            <div class="span12" style="text-align:center">
+                <label id="title">FIFA WORLD CUP <span style="font-size:59pt">2014 </span>QUIZ</label>
+            </div>
+            <hr />
+        </div>
+        <br />
+       
+        <div id="divHome" style="position:absolute;background-color:white;min-width:400px;width:600px;min-height:300px;top:320px;left:33%;border-radius:7px">
+            <div class="row-fluid" style="text-align:center">
+                <div class="span12">
+                     
+                </div>
+                <img src="images/fifa.jpg" height="150" width="300" />
+                <br />
+                <label id="lblHome" style="font-family:Andy;font-size:18pt;padding-top:20px;padding:10px;">
+                  
+                 How much do you know about the world cup? Find out now! 
+                
+                     </label>
+                <br />
+                <br />
+                <div class="span12" style="text-align:center">
+                    <input id="btnGo" class="submit" type="button" value="GO!"/>
+                    <input id="btnRules" class="next" type="button" value="Rules" />
+                </div>
+                
+            </div>
+
+        </div>
+
+          <div id="divScore" style="position:absolute;background-color:white;min-width:400px;min-height:300px;top:320px;left:-100%;border-radius:7px">
+            <div class="row-fluid" style="text-align:center">
+                <div class="span12">
+                     
+                </div>
+                <img src="images/fifa.jpg" height="150" width="300" />
+                <br />
+                <label style="font-family:Andy;font-size:18pt;padding-top:20px;padding:10px;">
+                 Your Score:<label id="score"></label>
+                
+                     </label>
+                <br />
+                <br />
+                <div class="span12" style="text-align:center">
+                    <input id="btnExit" class="submit" type="button" value="EXIT"/>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+
+
+
+      
+           <div id="divFirst" style="position:absolute;top:30%;right:-100%;text-align:center;background-color:rgba(236, 240, 241,1.0);min-height:300px;min-width:400px;width:400px">
+                <label style="font-family:Andy;font-size:18pt;padding-top:10px">
+                    
+                        Question 1
+                        </label>
+                    <hr />
+                      
+                    <label style="font-family:Andy;font-size:18pt">
+                           Which team had a hotel and sports facility built in Brazil specifically for them?
+                    </label>
+                    <div style="text-align:left;margin-left:42%;font-family:Arial;padding-top:30px;padding-bottom:30px;">
+                        <input id="1A" type="checkbox"  />Germany<br />
+                        <input id="1B" type="checkbox" />Ghana<br />
+                        <input id="1C" type="checkbox" />United States<br />
+                        <input id="1D" type="checkbox" />Switzerland<br />
+                    </div>
+                     
+               <div class="row-fluid">
+                  <div class="span12">
+                       <input id="btnFirst" class="submit" type="button" value="Submit"/>
+                        
+
+                  </div>
+              </div>
+           </div>
+       
+
+           
+           <div id="divSecond" style="position:absolute;top:30%;right:-100%;text-align:center;background-color:rgba(236, 240, 241,1.0);min-height:300px;min-width:400px;width:400px">
+                <label style="font-family:Andy;font-size:18pt;padding-top:10px">
+                    
+                        Question 2
+                        </label>
+                    <hr />
+                      
+                    <label style="font-family:Andy;font-size:18pt">
+                        Which location has the world's hightest Google search volume index for "World Cup" ?
+                      
+                    </label>
+                    <div style="text-align:left;margin-left:42%;font-family:Arial;padding-top:30px;padding-bottom:30px;">
+                        <input id="2A" type="checkbox"  />Brazil<br />
+                        <input id="2B" type="checkbox" />Solomon Islands<br />
+                        <input id="2C" type="checkbox" />United States<br />
+                        <input id="2D" type="checkbox" />Australia<br />
+                    </div>
+                     
+               <div class="row-fluid">
+                  <div class="span12">
+                       <input id="btnSecond" class="submit" type="button" value="Submit"/>
+                        
+                      <br />
+                      <br />
+                  </div>
+                  
+              </div>
+           </div>
+       
+
+
+        
+           <div id="divThird" style="position:absolute;top:30%;text-align:center;right:-100%;background-color:rgba(236, 240, 241,1.0);min-height:300px;min-width:400px;width:400px;">
+                <label style="font-family:Andy;font-size:18pt;padding-top:10px">
+                    
+                        Question 3
+                        </label>
+                    <hr />
+                      
+                    <label style="font-family:Andy;font-size:18pt">
+                       Which country does Lionel Messi play for ?
+                      
+                    </label>
+                    <div style="text-align:left;margin-left:42%;font-family:Arial;padding-top:30px;padding-bottom:30px;">
+                        <input id="3A" type="checkbox"  />Italy<br />
+                        <input id="3B" type="checkbox" />Spain<br />
+                        <input id="3C" type="checkbox" />Argentina<br />
+                        <input id="3D" type="checkbox" />Croatia<br />
+                    </div>
+                     
+               <div class="row-fluid">
+                  <div class="span12">
+                       <input id="btnThird"  class="submit" type="button" value="Submit"/>
+                      <br />
+                      <br />
+
+                  </div>
+              </div>
+           </div>
+       
+
+        
+        
+           <div id="divFourth" style="position:absolute;top:30%;text-align:center;background-color:rgba(236, 240, 241,1.0);min-height:300px;min-width:400px;right:-100%;width:400px">
+                <label style="font-family:Andy;font-size:18pt;padding-top:10px">
+                    
+                        Question 4
+                        </label>
+                    <hr />
+                      
+                    <label style="font-family:Andy;font-size:18pt">
+                       How much money is awarded to the winning team ?
+                      
+                    </label>
+                    <div style="text-align:left;margin-left:40%;font-family:Arial;padding-top:30px;padding-bottom:30px;">
+                        <input id="4A" type="checkbox"  />$35 Million<br />
+                        <input id="4B" type="checkbox" />Nothing, they play for bragging rights.<br />
+                        <input id="4C" type="checkbox" />$100,000<br />
+                        <input id="4D" type="checkbox" />$1 Million<br />
+                    </div>
+                     
+               <div class="row-fluid">
+                  <div class="span12">
+                       <input id="btnFourth" class="submit" type="button" value="Submit"/>
+                      
+
+                  </div>
+              </div>
+           </div>
+       
+
+         
+       
+           <div id="divFifth" style="position:absolute;top:30%;text-align:center;background-color:rgba(236, 240, 241,1.0);min-height:300px;min-width:400px;right:-100%;width:400px">
+                <label style="font-family:Andy;font-size:18pt;padding-top:10px">
+                    
+                        Question 5
+                        </label>
+                    <hr />
+                      
+                    <label style="font-family:Andy;font-size:18pt">
+                       Which team is the tallest ?
+                      
+                    </label>
+                    <div style="text-align:left;margin-left:42%;font-family:Arial;padding-top:30px;padding-bottom:30px;">
+                        <input id="5A" type="checkbox"  />Ghana<br />
+                        <input id="5B" type="checkbox" />Germany<br />
+                        <input id="5C" type="checkbox" />Spain<br />
+                        <input id="5D" type="checkbox" />United States<br />
+                    </div>
+                     
+               <div class="row-fluid">
+                  <div class="span12">
+                       <input id="btnFifth" class="submit" type="button" value="Submit"/>
+                        
+
+                  </div>
+              </div>
+           </div>
+       </div>
+
+ 
+</body>
+    
+</html>
+
+<script>
+
+    $(document).ready(function () {
+        counter = 0
+        cardcounter = 0
+        /*--Hide Home div and show first question--*/
+        $('#btnGo').click(function () {
+            $('#divHome').animate({ left: '-100%' }, "fast");
+            $('#divFirst').animate({ left: '40%' }, "fast");
+            $('#lblHome').text('How much do you know about the world cup? Find out now');
+            counter = 0
+            cardcounter = 0
+        });
+
+
+     
+        /*--On Submit go to second question--*/
+        $('#btnFirst').click(function () {
+            if ($('#1A').attr('checked')) {
+                counter++
+                
+            } else
+                alert('YELLOW CARD')
+                cardcounter ++
+
+            $('#divFirst').animate({ left: '-100%' }, "fast")
+             $('#divSecond').animate({ left: '40%' }, "fast");
+            })
+        
+
+    /*--On Submit go to third question--*/
+        $('#btnSecond').click(function () {
+            if (cardcounter >= 2) {
+                alert('game over')
+
+            }else if 
+
+                ($('#2B').attr('checked')) {
+                counter++
+                alert(counter)
+            } else
+                alert('YELLOW CARD')
+                cardcounter++
+
+        $('#divSecond').animate({ left: '-100%'},"fast") 
+        $('#divThird').animate({ left: '40%' }, "fast");
+    })
+    
+
+        /*--On Submit go to fourth question--*/
+        $('#btnThird').click(function () {
+            if ($('#3C').attr('checked')) {
+                counter++
+                
+            } else
+                alert('YELLOW CARD')
+                cardcounter++
+
+
+        $('#divThird').animate({ left: '-100%' }, "fast")
+        $('#divFourth').animate({ left: '40%' }, "fast");
+    })
+
+        /*--On Submit go to fifth question--*/
+        $('#btnFourth').click(function () {
+            if ($('#4A').attr('checked')) {
+                counter++
+                
+            } else
+                alert('YELLOW CARD')
+                cardcounter++
+
+        $('#divFourth').animate({ left: '-100%' }, "fast")
+        $('#divFifth').animate({ left: '40%' }, "fast");
+    })
+
+        /*--On Submit show score--*/
+        $('#btnFifth').click(function () {
+            if ($('#5B').attr('checked')) {
+                counter++
+ 
+            } else
+                alert('YELLOW CARD')
+                cardcounter++
+
+        $('#divFifth').animate({ left: '-100%' }, "fast")
+        $('#divScore').animate({ left: '40%' }, "fast");
+        $('#score').text(counter + "" + "!")
+            alert(cardcounter)
+    })
+
+        /*--On Exit show home--*/
+    $('#btnExit').click(function () {
+        $('#divScore').animate({ left: '-100%' }, "fast")
+        $('#divHome').animate({ left: '33%' }, "fast");
+    })
+
+        /*-Show Rules--*/
+    $('#btnRules').click(function () {
+        $('#lblHome').text('Rules are simple. Miss a question, you get a yellow card. Miss 2, thats an automatic red and the game ends. Good Luck!');
+    })
+
+    });
+
+
+
+</script>

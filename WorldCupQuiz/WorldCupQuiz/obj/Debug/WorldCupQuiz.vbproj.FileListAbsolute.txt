@@ -1,0 +1,8 @@
+c:\users\christian\documents\visual studio 2012\Projects\WorldCupQuiz\WorldCupQuiz\bin\WorldCupQuiz.dll
+c:\users\christian\documents\visual studio 2012\Projects\WorldCupQuiz\WorldCupQuiz\bin\WorldCupQuiz.pdb
+c:\users\christian\documents\visual studio 2012\Projects\WorldCupQuiz\WorldCupQuiz\bin\WorldCupQuiz.xml
+c:\users\christian\documents\visual studio 2012\Projects\WorldCupQuiz\WorldCupQuiz\obj\Debug\WorldCupQuiz.Resources.resources
+c:\users\christian\documents\visual studio 2012\Projects\WorldCupQuiz\WorldCupQuiz\obj\Debug\WorldCupQuiz.vbproj.GenerateResource.Cache
+c:\users\christian\documents\visual studio 2012\Projects\WorldCupQuiz\WorldCupQuiz\obj\Debug\WorldCupQuiz.dll
+c:\users\christian\documents\visual studio 2012\Projects\WorldCupQuiz\WorldCupQuiz\obj\Debug\WorldCupQuiz.xml
+c:\users\christian\documents\visual studio 2012\Projects\WorldCupQuiz\WorldCupQuiz\obj\Debug\WorldCupQuiz.pdb
